@@ -49,24 +49,15 @@ class Song
   end
 
   def self.new_from_filename(filename)    #  initializes a song and artist_name based on the filename format
-     # example: "Taylor Swift - Blank Space.mp3"
-     # filename = "Taylor Swift - Blank Space.mp3"
-    song_array = filename.split(/\-|\./)  # splits string into array by - or .
-    #song_array.pop                        # removes the .mp3 tag ... may not be neccessary
-
-    song = self.new
-    song.name = song_array[1].strip
-    song.artist_name = song_array[0].strip
-    # artist_name = song_array[0].strip
-    # name = song_array[1].strip
-    song
-
-    #song.name = name1 #= song_array[1].strip #name
-    #song.artist_name = artist_name1 #= song_array[0].strip #artist_name
-
-    #self.create#_by_name(name)
-
+    song_array = filename.split(/\-|\./)      # splits string into array by - or .
+    #song_array.pop                           # removes the .mp3 tag ... not neccessary
+    song = self.new                           # instantiates new song
+    song.name = song_array[1].strip           # name is 2nd item in song_array and trim/strip white spaces
+    song.artist_name = song_array[0].strip    # artist_name is 1st item in song_array and trim/strip white spaces
+    song                                      # return song instance
       end
+
+
 
 
 end
