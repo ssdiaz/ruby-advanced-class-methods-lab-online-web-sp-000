@@ -63,9 +63,8 @@ class Song
     self.new_from_filename(filename).save
   end
 
-  def self.destroy_all
+  def self.destroy_all    # clears all the song instances from the @@all array
     self.all.clear
   end
-
 
 end
