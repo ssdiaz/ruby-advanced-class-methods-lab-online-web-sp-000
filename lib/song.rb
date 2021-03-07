@@ -32,7 +32,7 @@ class Song
   def self.find_by_name(name)                   # can find a song present in @@all by name (FAILED - 1)
     self.all.find {|song| song.name == name }   #  returns falsey when a song name is not present in @@all (FAILED - 2)
   end
-end
+
 
   def self.find_or_create_by_name(name)
     #  invokes .find_by_name and .create_by_name instead of repeating code
@@ -48,6 +48,7 @@ end
   def self.alphabetical   # returns all the song instances in alphabetical order by song name
     self.all.sort_by { |song| song.name }
   end
+end
 
   def self.new_from_filename(filename)    #  initializes a song and artist_name based on the filename format
     song_array = filename.split(/\-|\./)      # splits string into array by - or .
