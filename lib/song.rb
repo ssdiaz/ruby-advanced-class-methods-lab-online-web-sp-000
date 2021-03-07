@@ -55,8 +55,12 @@ class Song
     song.name = song_array[1].strip           # name is 2nd item in song_array and trim/strip white spaces
     song.artist_name = song_array[0].strip    # artist_name is 1st item in song_array and trim/strip white spaces
     song                                      # return song instance
-      end
+  end
 
+  def
+  end
+
+  end
 
 
 
