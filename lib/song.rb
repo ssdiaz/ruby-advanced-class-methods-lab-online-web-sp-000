@@ -32,6 +32,7 @@ class Song
   def self.find_by_name(name)                   # can find a song present in @@all by name (FAILED - 1)
     self.all.find {|song| song.name == name }   #  returns falsey when a song name is not present in @@all (FAILED - 2)
   end
+end
 
   def self.find_or_create_by_name(name)
     #  invokes .find_by_name and .create_by_name instead of repeating code
