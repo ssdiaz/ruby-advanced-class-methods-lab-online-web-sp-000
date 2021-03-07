@@ -57,8 +57,8 @@ class Song
     name1 = song_array[1].strip
 
     song = self.new
-    song.name = name1 #= song_array[1].strip #name
-    song.artist_name = artist_name1 #= song_array[0].strip #artist_name
+    #song.name = name1 #= song_array[1].strip #name
+    #song.artist_name = artist_name1 #= song_array[0].strip #artist_name
 
     #self.create#_by_name(name)
 
