@@ -39,7 +39,7 @@ class Song
     #  creates a new Song object with the provided title if one doesn't already exist
 
     if self.find_by_name(name)# == true
-      find_by_name(name)
+      self.find_by_name(name)
     else
       self.create_by_name(name)
     end
