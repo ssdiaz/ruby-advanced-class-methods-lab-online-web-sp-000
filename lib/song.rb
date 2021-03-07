@@ -37,13 +37,15 @@ class Song
     #  invokes .find_by_name and .create_by_name instead of repeating code
     #  returns the existing Song object (doesn't create a new one) when provided the title of an existing Song
     #  creates a new Song object with the provided title if one doesn't already exist
-
-    if self.find_by_name(name)# == true
+    if self.find_by_name(name) # == true
       self.find_by_name(name)
     else
       self.create_by_name(name)
     end
   end
 
+  def self.alphabetical   # returns all the song instances in alphabetical order by song name
+    self.all.sort
+  end
 
 end
