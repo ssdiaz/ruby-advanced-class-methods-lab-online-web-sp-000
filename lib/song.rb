@@ -37,10 +37,10 @@ class Song
 #  invokes .find_by_name and .create_by_name instead of repeating code
 #  returns the existing Song object (doesn't create a new one) when provided the title of an existing Song
 #  creates a new Song object with the provided title if one doesn't already exist
-    if self.find_by_name is true
+    if self.find_by_name(name) is true
       puts "hi"
     else
-      self.create_by_name
+      self.create_by_name(name)
     end
 
   end
