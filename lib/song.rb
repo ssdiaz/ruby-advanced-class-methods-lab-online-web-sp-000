@@ -59,10 +59,13 @@ class Song
     song                                      # return song instance
   end
 
-  def self.create_from_filename(filename)
+  def self.create_from_filename(filename)   #  initializes and saves a song and artist_name based on the filename format
     self.new_from_filename(filename).save
   end
 
+  def destroy_all
+    self.all.clear
+  end
 
 
 end
