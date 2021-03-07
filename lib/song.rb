@@ -53,10 +53,12 @@ class Song
      # filename = "Taylor Swift - Blank Space.mp3"
     song_array = filename.split(/\-|\./)  # splits string into array by - or .
     #song_array.pop                        # removes the .mp3 tag ... may not be neccessary
+
+    song = self.new
     artist_name = song_array[0].strip
     name = song_array[1].strip
 
-    song = self.new
+
     #song.name = name1 #= song_array[1].strip #name
     #song.artist_name = artist_name1 #= song_array[0].strip #artist_name
 
