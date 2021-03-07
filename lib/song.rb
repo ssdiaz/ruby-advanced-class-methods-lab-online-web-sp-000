@@ -47,8 +47,8 @@ class Song
 
   def self.alphabetical   # returns all the song instances in alphabetical order by song name
     self.all.sort_by { |song| song.name }
+    end
   end
-end
 
   def self.new_from_filename(filename)    #  initializes a song and artist_name based on the filename format
     song_array = filename.split(/\-|\./)      # splits string into array by - or .
@@ -62,7 +62,7 @@ end
   def
   end
 
-  #end
+
 
 
 
