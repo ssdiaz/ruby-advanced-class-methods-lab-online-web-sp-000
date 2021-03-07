@@ -59,7 +59,7 @@ class Song
     song.artist_name = song_array[0].strip
     # artist_name = song_array[0].strip
     # name = song_array[1].strip
-
+    song
 
     #song.name = name1 #= song_array[1].strip #name
     #song.artist_name = artist_name1 #= song_array[0].strip #artist_name
