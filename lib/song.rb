@@ -48,4 +48,13 @@ class Song
     self.all.sort_by { |song| song.name }
   end
 
+  def self.new_from_filename(filename)    #  initializes a song and artist_name based on the filename format
+     # example: "Taylor Swift - Blank Space.mp3"
+    song_array = filename.split(-)(.).pop
+    song_array[0] = artist_name
+    song_array[1] = name
+    
+  end
+
+
 end
