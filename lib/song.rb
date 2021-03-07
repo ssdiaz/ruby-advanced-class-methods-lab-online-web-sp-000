@@ -55,8 +55,10 @@ class Song
     #song_array.pop                        # removes the .mp3 tag ... may not be neccessary
 
     song = self.new
-    artist_name = song_array[0].strip
-    name = song_array[1].strip
+    song.name = song_array[1].strip
+    song.artist_name = song_array[0].strip
+    # artist_name = song_array[0].strip
+    # name = song_array[1].strip
 
 
     #song.name = name1 #= song_array[1].strip #name
