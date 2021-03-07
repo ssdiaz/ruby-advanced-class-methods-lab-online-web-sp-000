@@ -31,9 +31,7 @@ class Song
 
   def self.find_by_name(name)    # can find a song present in @@all by name (FAILED - 1)
                                 #  returns falsey when a song name is not present in @@all (FAILED - 2)
-    self.all.select {|song| song.name = name }
-    #end
-
+    self.all.select {|song| song.name == name }
 
   end
 
